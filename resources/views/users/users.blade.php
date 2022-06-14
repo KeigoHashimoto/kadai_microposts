@@ -10,7 +10,7 @@
                     </div>
                     <div>
                         {{--ユーザー詳細ページへリンク--}}
-                        <p>{!! link_to_route('users.index','View profile',['user'=>$user->id]) !!}</p>
+                        <p>{!! link_to_route('users.show','View profile',['user'=>$user->id]) !!}</p>
                     </div>
                 </div>
             </li>
