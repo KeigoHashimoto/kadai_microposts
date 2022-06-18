@@ -11,7 +11,7 @@ class MicropostsController extends Controller
             //   認証済みユーザーを取得
         if(\Auth::check()){
             $user=\Auth::user();
-            $microposts=$user->microposts()->orderby('created_at','desc')->paginate(10);
+            $microposts=$user->feed_microposts()->orderby('created_at','desc')->paginate(10);
             
             $data=[
                 'user'=>$user,
