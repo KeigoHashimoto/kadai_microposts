@@ -40,4 +40,5 @@
             @endif
         </div>
     </div>
+    {{$microposts->links()}}
 @endsection
