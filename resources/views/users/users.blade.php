@@ -4,7 +4,7 @@
             <li class="media">
                 {{--ユーザーのメールアドレスをもとにGravatarを取得して表示--}}
                 <img class="mr-2 rounded" src="{{ Gravatar::get($user->email,['size'=>50]) }}" alt="">
-                <div class="medi-body">
+                <div class="media-body">
                     <div>
                         {{$user->name}}
                     </div>
